@@ -36,13 +36,16 @@ body {
 .social-link {
   margin-left: 20px;
 }
+.social-link:first-child {
+  margin-left: 0;
+}
 .hero-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 .hero-subtitle {
-  display: inline-block;
+  display: block;
   font-size: 24px;
   line-height: 28px;
   color: #ffbb01;
@@ -165,9 +168,13 @@ body {
   align-items: center;
   justify-content: space-between;
 }
+.contacts-text {
+  flex-basis: 50%;
+}
 .contacts-data {
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 42px;
 }
 .contacts-phone,
 .contacts-mail {
@@ -187,4 +194,16 @@ body {
 .contacts-link {
   text-decoration: none;
   color: inherit;
+  margin-right: 37px;
+}
+.contacts-link:hover {
+  text-decoration: underline;
+}
+.contacts-policy {
+  display: inline-block;
+  font-size: 15px;
+  line-height: 18px;
+  text-decoration-line: underline;
+  color: #a5a5a5;
+  margin-top: 72px;
 }
